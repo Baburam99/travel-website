@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey Begins!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-img">
+          <li>
+            <img
+              src="https://www.logopeople.in/wp-content/uploads/2023/08/Travel-Vector-Logo1.jpg"
+              alt=""
+            />
+            T & S Travels
+          </li>
+        </div>
+        <ul class="navlist">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact Us!</a></li>
+        </ul>
+        <div class="nav-button">
+          <button id="open" class="open">=</button>
+          <button id="close" class="close">*</button>
+        </div>
+      </nav>
+      <ul class="hidden" id="hidden-navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact Us!</a></li>
+      </ul>
+    </header>
+    <!-- navbar ends here -->
+    <!-- Home page code -->
+
+    <section id="home" class="home">
+      <h2 class="home-title">Explore The Nature of Nepal!</h2>
+      <div class="home-content">
+        <div class="home-formContainer">
+          <form class="home-form">
+            <div class="travel-location">
+              <select class="place" id="locations">
+                <option value="">Select a location</option>
+                <option value="chitwan">Chitwan National Park</option>
+                <option value="pashupatinath">pashupatinath Temple</option>
+                <option value="Buddha Stupa">Janakput</option>
+                <option value="Everest">Mt. Everest</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="pokhara">Pokhara</option>
+              </select>
+              <option value="Lumbini"></option>
+            </div>
+            <div class="travel-date">
+              <input type="date" id="date" required />
+            </div>
+            <button type="submit" id="Schedule">Schedule</button>
+          </form>
+          <div class="home-booking" id="homeBooking">
+            <h1>Your bookings:</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <h1 class="service-title">Discover Nepal with Our Premier Travel Services</h1>
+      <div class="service-box">
+        <div class="service-one">
+          <div class="texts">
+            <h1>Trekking Adventures</h1>
+          <p>
+            Explore the breathtaking Himalayan landscapes with our expert guides
+            on tailor-made trekking adventures...
+          </p>
+        </div>
+          <div class="img">
+            <img src="https://www.muchbetteradventures.com/magazine/content/images/2018/05/08140741/download-3.jpeg" alt="trekking">
+          </div>
+          
+        </div>
+        <div class="service-two">
+          <div class="texts">
+            <h1>Cultural Tours</h1>
+          <p>
+            Discover the rich tapestry of Nepalese culture with our curated
+            cultural tours...
+          </p>
+          </div>
+          <div class="img">
+            <img src="https://www.adventuretreksnepal.com/assets/images/tour/nepal-sightseeing-tour.jpg" alt="Cultural tours">
+          </div>
+        </div>
+        <div class="service-three">
+         <div class="texts">
+          <h1>Jungle Safaris</h1>
+          <p>
+            Embark on an unforgettable safari adventure in the lush jungles of
+            Chitwan and Bardia National Parks...
+          </p>
+         </div>
+         <div class="img">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/09/40/f7/chitwan-jungle-safari.jpg?w=700&h=500&s=1" alt="jungle safari">
+         </div>
+        </div>
+        <div class="service-four">
+        <div class="texts">
+          <h1>Adventure Sports</h1>
+          <p>
+            Satiate your thirst for adrenaline with our thrilling adventure
+            sports activities...
+          </p>
+        </div>
+        <div class="img">
+          <img src="https://www.footprintadventure.com/uploads/package/7-days-adventure-tour-in-nepal.jpg" alt="Adventurer Sports">
+        </div>
+        </div>
+        <div class="service-five">
+         <div class="texts">
+          <h1>Spiritual Retreats</h1>
+          <p>
+            Embark on a transformative journey of self-discovery with our
+            spiritual retreats...
+          </p>
+         </div>
+         <div class="img">
+          <img src="https://images.squarespace-cdn.com/content/v1/5ca801aa797f7475f982ead2/30aeeba6-f836-4d85-bdcb-4647bc45c34d/monastery+retreat+in+Nepal.jpg" alt="Spiritual Retreats">
+         </div>
+        </div>
+        <div class="service-six">
+        <div class="texts">
+          <h1>Customized Itineraries</h1>
+          <p>
+            Tailor your dream vacation with our customized itinerary planning
+            services...
+          </p>
+        </div>
+        <div class="img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnNNScXCYmsI15kBV6YWSJInjyBU29bDPSoblci-Tlfw&s" alt="Customized itinerary">
+        </div>
+       
+        </div>
+        <button class="service-booking"><a href="#booking">Book a trip Now!</a></button>
+      </div>
+     
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
