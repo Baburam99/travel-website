@@ -226,55 +226,42 @@ header {
   padding: 2em;
 }
 
-.home-form {
-  display: flex;
+
+.home-Container{
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(0, 195, 255, 0.688);
+  width: 30em;
+  padding: 2em;
+  color:white;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  height: 20vw;
-  padding: 1em 2em;
-  gap: 1em;
+  gap: 2em;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  border-radius: 2em;
+}
+.home-Container a{
+color:white;
+  text-decoration: none;
 }
 
-.travel-location {
-  display: flex;
-}
 
-.travel-location select {
+.home-Container button {
   padding: 0.4em;
   text-align: center;
   font-size: clamp(1rem, 3vw, 2rem);
-  border-radius: 5px;
+  background-color: rgba(0, 170, 255, 0.843);
   border: none;
-  background-color: rgba(0, 145, 255, 0.749);
+  border-radius: 5px;
+  cursor: pointer;
   color: white;
   text-shadow: 2px 1px 4px black;
-  cursor: pointer;
+}
+.home-Container p{
+  font-size: clamp(1rem, 3vw, 2rem);
+  text-shadow: 3px 2px 2px black;
 }
 
-.home-form button {
-  padding: 0.4em;
-  text-align: center;
-  font-size: clamp(1rem, 3vw, 2rem);
-  background-color: rgba(0, 145, 255, 0.843);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  text-shadow: 2px 1px 4px black;
-}
-
-.travel-date input {
-  padding: 0.4em 2em;
-  text-align: center;
-  font-size: clamp(1rem, 3vw, 2rem);
-  background-color: rgba(0, 145, 255, 0.801);
-  border: none;
-  color: white;
-  text-shadow: 2px 1px 4px black;
-  cursor: pointer;
-  border-radius: 5px;
-}
 
 .home-booking {
   background-color: rgba(0, 162, 255, 0.774);
@@ -390,6 +377,8 @@ header {
   background-color: rgba(0, 255, 81, 0.577);
   border-radius: 10px;
   border:none;
+  width: 20em;
+  margin-left: 23em;
   cursor: pointer;
 }
 .service-booking a{
@@ -604,4 +593,122 @@ box-shadow: 3px 4px 10px rgb(6, 226, 255);
   .texts p{
     font-size: 0.9rem;
   }
+}
+/* services css */
+/* gallery css */
+
+
+.Gallery{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2em;
+  padding: 1em;
+}
+.Gallery .title{
+  font-family: monospace;
+}
+.Gallery .title h1{
+  margin-bottom: 2em;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  background-color: rgba(0, 242, 255, 0.205);
+  margin-left: 30vw;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.Gallery .title p{
+  color:gold;
+  text-shadow: 2px 1px 3px black;
+  font-size: clamp(1.3rem, 4vw, 2rem); 
+  border-bottom: 4px solid gold;
+  padding: 0.4em;
+  
+}
+.galleryone{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ background-image: linear-gradient(to bottom, gold,skyblue);
+  padding: 0.1em;
+  border-radius: 0.5em;
+}
+.gallerytwo{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 191, 255, 0.589);
+  padding: 0.1em;
+  border-radius: 0.5em;
+}
+.ptitle{
+  margin-bottom: 0.4em;
+  padding: 0px;
+  margin-top: 4em;
+ 
+  
+
+}
+.gold-gallery_container{
+ 
+  flex-direction: column;
+}
+.wrap{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  
+
+  gap: 1.4em;
+}
+.Gallery .ptitle p{
+  padding: 1em;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  border-bottom: 4px solid rgb(0, 221, 255);
+  color:rgb(0, 225, 255);
+}
+.gallerytwo img{
+  height: 10em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryone img{
+  height: 10em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galleryone a{
+  color:white;
+  text-decoration: none;
+}
+.gallerytwo a{
+  color:white;
+  text-decoration: none;
+}
+
+.overlay-textimg {
+opacity: 0;
+position: absolute;
+text-shadow: 3px 2px 4px rgb(0, 0, 0);
+background-color: rgba(8, 218, 255, 0.652);
+padding: 1em;
+border-radius: 1em;
+cursor: pointer;
+}
+.overlay-textimg h1{
+  color:black;
+  text-shadow: 2px 1px 4px rgb(255, 255, 255);
+  font-family: arial;
+}
+.platinum-collection{
+  display: flex;
+  flex-direction: row;
 }

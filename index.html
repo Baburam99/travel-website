@@ -20,8 +20,8 @@
         </div>
         <ul class="navlist">
           <li><a href="#home">Home</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#booking">Booking</a></li>
           <li><a href="#contact">Contact Us!</a></li>
         </ul>
         <div class="nav-button">
@@ -31,8 +31,8 @@
       </nav>
       <ul class="hidden" id="hidden-navbar">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#booking">Booking</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#Services">Services</a></li>
         <li><a href="#contact">Contact Us!</a></li>
       </ul>
     </header>
@@ -42,31 +42,88 @@
     <section id="home" class="home">
       <h2 class="home-title">Explore The Nature of Nepal!</h2>
       <div class="home-content">
-        <div class="home-formContainer">
-          <form class="home-form">
-            <div class="travel-location">
-              <select class="place" id="locations">
-                <option value="">Select a location</option>
-                <option value="chitwan">Chitwan National Park</option>
-                <option value="pashupatinath">pashupatinath Temple</option>
-                <option value="Buddha Stupa">Janakput</option>
-                <option value="Everest">Mt. Everest</option>
-                <option value="Kathmandu">Kathmandu</option>
-                <option value="pokhara">Pokhara</option>
-              </select>
-              <option value="Lumbini"></option>
-            </div>
-            <div class="travel-date">
-              <input type="date" id="date" required />
-            </div>
-            <button type="submit" id="Schedule">Schedule</button>
-          </form>
-          <div class="home-booking" id="homeBooking">
-            <h1>Your bookings:</h1>
-          </div>
+        <div class="home-Container">
+          <p class="para">Nepal is a tapestry of natural and cultural diversity, woven together by its stunning landscapes and rich heritage. Nestled amidst the Himalayas, it boasts the world's highest peaks, including the majestic Mount Everest, alongside verdant valleys, serene lakes, and lush forests teeming with diverse flora and fauna. This natural bounty provides a canvas for a vibrant tapestry of cultures, where ancient traditions and modern life intertwine harmoniously. From the bustling streets of Kathmandu with its temples.
+          </p>
+            <button type="submit" id="Schedule"><a href="#Gallery">Book Your trip Now!</a></button>
+          
         </div>
       </div>
     </section>
+<!-- home section ends here -->
+<!-- gallery starts here -->
+<section id="Gallery" class="Gallery">
+  <div class="title">
+    <h1>Pick Your destination!</h1>
+    <p>Golden collection</p>
+  </div>
+  <div class="gold-gallery_container">
+    <div class="wrap">
+
+     <div id="imghover" class="galleryone">
+     <a href="#kathmandu.html"> <img  src="https://media.istockphoto.com/id/637696304/photo/patan.jpg?s=612x612&w=0&k=20&c=-53aSTGBGoOOqX5aoC3Hs1jhZ527v3Id_xOawHHVPpg=" alt="Kathmandu">
+      <div class="overlay-textimg" id="overlayText"><h1>Kathmandu</h1>
+      </div>
+      </a>
+    </div>
+    
+    
+      <div id="imghover" class="galleryone">
+      <a href="#pokhara.html"> <img  src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/0a99949f58bc92145369e8363c64c33bfd85f819/big-68acc559aad8def0f326f4d62e8faf78.jpg" alt="Kathmandu">
+       <div class="overlay-textimg" id="overlayText"><h1>Pokhara</h1>
+        </div>
+       </a>
+
+  </div>
+
+  <div id="imghover" class="galleryone">
+    <a href="#lumbini.html"> <img  src="https://www.holidify.com/images/cmsuploads/compressed/Gemrany_Monastery,Lumbini_20181009130404_20181009130413.jpg" alt="Kathmandu">
+     <div class="overlay-textimg" id="overlayText">
+      <h1>Lumbini</h1>
+     </div>
+      </a>
+    </div>
+<div id="imghover" class="galleryone">
+  <a href="#chitwan.html"> <img  src="https://www.holidify.com/images/cmsuploads/compressed/Gemrany_Monastery,Lumbini_20181009130404_20181009130413.jpg" alt="Kathmandu">
+   <div class="overlay-textimg" id="overlayText">
+    <h1>Chitwan</h1>
+   </div>
+    </a>
+  
+   
+</div>
+  
+  
+  
+</div>
+  <div class="ptitle">
+    <p>Platinum-collection</p>
+  </div>
+  <div class="platinum-collection">
+    <div id="imghover" class="gallerytwo">
+      <a href="#pasupatinath.html"> <img  src="https://media.istockphoto.com/id/637696304/photo/patan.jpg?s=612x612&w=0&k=20&c=-53aSTGBGoOOqX5aoC3Hs1jhZ527v3Id_xOawHHVPpg=" alt="Kathmandu">
+       <div class="overlay-textimg" id="overlayText"><h1>Pasupatinath Temple</h1>
+       </div>
+       </a>
+  
+   </div>
+
+
+   <div id="imghover" class="gallerytwo">
+    <a href="#budha.html"> <img  src="https://media.istockphoto.com/id/637696304/photo/patan.jpg?s=612x612&w=0&k=20&c=-53aSTGBGoOOqX5aoC3Hs1jhZ527v3Id_xOawHHVPpg=" alt="Kathmandu">
+     <div class="overlay-textimg" id="overlayText">
+      <h1>Budha Stupa</h1>
+    </div>
+     </a>
+     
+  </div>
+     
+        
+  </div>
+</section>
+
+    <!-- services starts here -->
+
     <section id="services" class="services">
       <h1 class="service-title">Discover Nepal with Our Premier Travel Services</h1>
       <div class="service-box">
@@ -144,7 +201,7 @@
         </div>
        
         </div>
-        <button class="service-booking"><a href="#booking">Book a trip Now!</a></button>
+        <button class="service-booking"><a href="book.html" target="_blank">Book a trip Now!</a></button>
       </div>
      
     </section>

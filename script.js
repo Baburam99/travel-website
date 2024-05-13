@@ -26,51 +26,18 @@ for (let i = 0; i < navElements.length; i++) {
 }
 
 //navbar
-//booking status
-let book = document.getElementById("Schedule");
+//plans
+const imghoverContainers = document.querySelectorAll('#imghover');
 
+imghoverContainers.forEach(function(container) {
+  const image = container.querySelector('img'); // Assuming the image is a direct child
+  const textOverlay = container.querySelector('#overlayText');
 
-book.addEventListener("click", function() {
-    let location = document.getElementById("locations").value;
-    let date = document.getElementById("date").value;
-    event.preventDefault();
-    
+  container.addEventListener('mouseover', function() {
+    textOverlay.style.opacity = '1';
+  });
 
-    if (location && date) {
-      
-        let bookingContainer = document.getElementById("homeBooking")
-
-        let paragraph = document.createElement("p");
-
-        paragraph.textContent = "Destination: " + location + ", Date: " + date;
-       
-        let deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete";
-        deleteButton.setAttribute('class','redbutton')
-        deleteButton.onclick = function() {
-            paragraph.remove();
-        };
-
-        let checkoutButton = document.createElement("button");
-        checkoutButton.textContent = "Checkout";
-        checkoutButton.setAttribute('class','greenbutton')
-
-        checkoutButton.onclick = function() {
-            window.location.href = "booking.html"; 
-        };
-
-        paragraph.appendChild(deleteButton);
-        paragraph.appendChild(checkoutButton); 
-        bookingContainer.appendChild(paragraph);
-         
-
-        document.getElementById("locations").value = "";
-        document.getElementById("date").value = "";
-
-    } else {
-       alert("please select location and date!")
-    } 
-   
-})
-
-//booking done
+  container.addEventListener('mouseleave', function() {
+    textOverlay.style.opacity = '0';
+  });
+});
